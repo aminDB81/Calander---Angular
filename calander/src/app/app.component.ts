@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { View } from '@syncfusion/ej2-schedule';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `<ejs-schedule height="850" width="1250" [currentView]="setView"></ejs-schedule>`,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calander';
+  title = 'calendar';
+  public setView: View = 'Month';
 }
